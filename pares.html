@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>deteccion par</h1>
+    <input type="number" name="0" id="entrada-numero" />
+    <button onClick="par()">detecta si es par</button>
+    <script>
+      //function NombreFunc(params){ //code here }
+      function par() {
+        let numeroingresado = document.getElementById("entrada-numero").value;
+        if (parseInt(numeroingresado) % 2 == 0) {
+          alert("TODO GUD. ES PAR");
+        } else {
+          alert("Mani no. Es impar");
+        }
+        document.getElementById("entrada-numero").value = 0;
+      }
+    </script>
+  </body>
+</html>
