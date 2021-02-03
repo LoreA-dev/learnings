@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Tu peso en un lugar donde pesas menos
+        </title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1>Tu peso en otro planeta</h1>
+        <p>En otros planetas pesas distinto</p>
+        <script>
+            let g_tierra = 9.8
+            let g_marte = 3.7
+            let g_jupiter = 24.8
+            
+            let peso= prompt("Ingresa tu peso aqui")
+            let planeta= prompt("Escribe: \n1 para Marte\n2 para Jupiter")
+           
+            let peso_marte = peso * g_marte / g_tierra
+            let peso_jupiter = peso * g_jupiter / g_tierra
+            
+            if (planeta == 1) {
+                document.write("Tu peso en marte es <b>" + parseInt(peso_marte) + " Kilos</b>")
+            } else if (planeta == 2) {
+                document.write("Tu peso en Jupiter es <b>" + parseInt(peso_jupiter) + " Kilos</b>")
+            } else {
+                alert("Opcion invalida")
+                document.write("Tu peso en Narnia es indefinido")
+
+            }
+            peso = parseFloat(peso)
+            
+        </script>
+    </body>
+</html>
