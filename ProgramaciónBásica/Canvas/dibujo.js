@@ -89,19 +89,3 @@ dibujarCurva(
     20 // Grosor
     ) 
 
-// dibujarCurva(
-//     "bluesky",
-//     154, 80, 
-//     200,200, 
-//     200,200, 
-//     206,297,
-//     ) 
-
-    
-/**
- * 
- * Lini inici: (3,4.93)
- * linea final: (3.47,0.46)
- * Curv 1: (4.7,8.7)
- * Curv 2: (7.75,4)
- */
