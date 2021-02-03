@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Cajero Automatico - Lorena</h1>
+    <h2>Saldo Actual:</h2>
+    <h2 id="saldo-actual">0</h2>
+    <br />
+    <input type="number" name="" id="entrada-texto" />
+    <button onclick="sacardinero()">Sacar Plata</button>
+    <button onClick="ingresarDinero()">Ingresar Plata</button>
+    <script>
+      function ingresarDinero(event) {
+        let Saldo = document.getElementById("saldo-actual").innerHTML;
+        let Saldo2 = document.getElementById("entrada-texto").value;
+        let nuevosaldo = parseInt(Saldo) + parseInt(Saldo2);
+
+        document.getElementById("saldo-actual").innerHTML = nuevosaldo;
+        document.getElementById("entrada-texto").value = 0;
+      }
+      function sacardinero() {
+        let Saldoactual = document.getElementById("saldo-actual").innerHTML;
+        let retiro = document.getElementById("entrada-texto").value;
+
+        if (parseInt(Saldoactual) < parseInt(retiro)) {
+          alert("EY EY EY. ¿Qué te pasa?");
+        } else {
+          let nuevosaldo = parseInt(Saldoactual) - parseInt(retiro);
+          document.getElementById("saldo-actual").innerHTML = nuevosaldo;
+          document.getElementById("entrada-texto").value = 0;
+        }
+      }
+    </script>
+  </body>
+</html>
