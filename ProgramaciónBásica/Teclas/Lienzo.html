@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio con el teclado</title>
+</head>
+<body>
+    <P>Selecciona un color para el dibujo</P>
+    <select name="Color" onchange="this.blur()" id="Color">
+        <option value="red">Rojo</option>
+        <option value="blue">Azul</option>
+        <option value="green">Verde</option>
+        <option value="blueviolet">Violeta</option>
+        <option value="aqua">Agua Marina</option>
+        <option value="pink">Rosado</option>
+        <option value="gray">Gris</option>
+        <option value="yellowgreen">Verde amarilloso</option>
+        <option value="lime">Lima</option>
+        <option value="tomato">Tomate</option>
+    </select>
+    <input type="button" value="Borrador" id="borra">
+    <input type="button" value="Limpia la pagina" id="eraser">
+    <br>
+    <canvas width="500" height="500" id="Area_de_dibujo"></canvas>
+    <script src=./lienzo.js ></script>
+</body>
+</html>
