@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .cuadro_texto{
+            display: block;
+            width: auto;
+            /* margin: vertical horizontal */
+            margin: 0px auto;
+            height: 20px;
+            padding: 5px;
+            border-radius: 20px;
+            margin-top: 10px;
+            border: 1px solid rgb(190, 190, 190); 
+            outline: none;
+            }
+
+            .cuadro_texto:hover{
+                border: 2px solid black;
+                /* box-shadow: 0px 0px 10px skyblue; */
+            }
+            .cuadro_texto:focus{
+                border: 2px solid black;
+                /* box-shadow: 0px 0px 10px skyblue; */
+            }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #contenedor{
+            width: 250px;
+            height: auto;
+            margin-bottom: 100px ;
+            margin: 10px 20px;
+            border-radius: 10px;
+            border: 1px solid rgb(0, 0, 0); 
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <strong>
+        <p style="margin: 0px 45px; display: block; margin-top: 10px; font-style: initial;font-family: Georgia, 'Times New Roman', Times, serif;">INICIO DE SESIÓN</p>
+        </strong>
+        <input type="text" placeholder="Usuario" class="cuadro_texto" id="user">
+        <input type="text" placeholder="Contraseña" class="cuadro_texto" id="pass">
+        <input style="margin: 30px auto; display: block;border-radius: 5px;" type="button" value="ENVIAR" id="send">    
+    </div>
+    <script src="Login.js"></script>
+</body>
+</html>

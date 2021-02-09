@@ -98,9 +98,9 @@ function dibujarTeclado(evento)
             case teclas.LEFT:
             dibujarLinea(colorsito, x, y , x - movimiento, y, papel)
             x = x - movimiento
-        break;
+            break;
         
-        case teclas.RIGTH:
+            case teclas.RIGTH:
             dibujarLinea(colorsito, x, y , x + movimiento, y, papel)
             x = x + movimiento
             break;

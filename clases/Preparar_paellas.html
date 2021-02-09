@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos para preparar paellas</title>
+    <style>
+        .entrada-texto{
+            display: block;
+            width: 80%;
+            /* margin: vertical horizontal */
+            margin: 0px auto;
+            height: 20px;
+            padding: 5px;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #contenedor{
+            width: 250px;
+            margin-bottom:50px ;
+            border: 1px solid rgb(190, 190, 190); 
+            border-radius: 10px;
+        }
+        .texto{
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <p class="texto">Ingrese el número de personas a comer</p>
+        <input type="text" class="entrada-texto" placeholder="# de personas" id="personas">
+        <p class="texto">Ingrese el valor del arroz por Kilo</p>
+        <input type="text" class="entrada-texto" placeholder="Valor del arroz" id="valordelarroz">
+        <p class="texto">Ingrese el valor de las gambas por Kilo</p>
+        <input type="text" class="entrada-texto" placeholder="Valor de las gambas" id="valordegambas">
+        <br><button style="display:block; margin: 10px auto;" id="calcular">Calcular</button>   
+    </div>
+    <script src="./Preparar_paella.js"></script>
+</body>
+</html>
