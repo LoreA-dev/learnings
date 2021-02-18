@@ -5,6 +5,17 @@ let teclas = {
     RIGTH: 39
 };
 
+const aleatorios = {
+    vacaX: aleatorio(0 , 420),
+    vacaY: aleatorio(0 , 420),
+    loboX: aleatorio(0 , 420),
+    loboY: aleatorio(0 , 420),
+    polloX: aleatorio(0 , 420),
+    polloY: aleatorio(0 , 420),
+    cerdoX: aleatorio(0 , 420),
+    cerdoY: aleatorio(0 , 420),
+}
+
 document.addEventListener("keydown", moverLobo)
 
 let villaPlatzi = document.getElementById("villaplatzi")
@@ -14,37 +25,40 @@ function moverLobo(evento)
 {  
     let movimiento = 5
     
-    if(loboX===500){
+    if(loboX > 500){
         loboX = 0 
-    }else if(loboX===0){
+    }else if(loboX<=0){
         loboX = 500
     }
     
-    if(loboY===500){
+    if(loboY > 500){
         loboY = 0 
-    }else if(loboY===0){
+    }else if(loboY <= 0){
         loboY = 500
     }
-    
     switch(evento.keyCode)
     {
         case teclas.UP:
+            dibujar()
             dibujarLobo(loboX, loboY)
             loboY =  loboY - movimiento
             break;
             
             case teclas.DOWN:
+            dibujar()
             dibujarLobo(loboX, loboY)
             loboY = loboY + movimiento
             break;
-
+            
             case teclas.LEFT:
-                dibujarLobo(loboX, loboY)
+            dibujar()
+            dibujarLobo(loboX, loboY)
             loboX = loboX - movimiento
             break;
             
             case teclas.RIGTH:
-                dibujarLobo(loboX, loboY)
+            dibujar()
+            dibujarLobo(loboX, loboY)
             loboX = loboX + movimiento
             break;
         }
@@ -133,25 +147,24 @@ function dibujar()
         lienzo.drawImage(fondo.imagen, 0, 0)
     }
     if (vaca.cargaOK){
-        let vacaX = aleatorio(0 , 420)
-        let vacaY = aleatorio(0 , 420)
+        let { vacaX, vacaY } = aleatorios
         lienzo.drawImage(vaca.imagen , vacaX, vacaY)
-        let vaca_X = vacaX * 80
-        let vaca_Y = vacaY * 80
+        // let vaca_X = vacaX * 80
+        // let vaca_Y = vacaY * 80
     }
     if (cerdo.cargaOK) {
-        let cerdoX = aleatorio(0 , 420)
-        let cerdoY = aleatorio(0 , 420)
+        let cerdoX = aleatorios.cerdoX
+        let cerdoY = aleatorios.cerdoY
         lienzo.drawImage(cerdo.imagen , cerdoX, cerdoY)
-        let cerdo_X = cerdoX * 80
-        let cerdo_Y = cerdoY * 80
+        // let cerdo_X = cerdoX * 80
+        // let cerdo_Y = cerdoY * 80
     }
     if (pollo.cargaOK) {
-        let polloX = aleatorio(0 , 420)
-        let polloY = aleatorio(0 , 420)
+        let polloX = aleatorios.polloX
+        let polloY = aleatorios.polloY  
         lienzo.drawImage(pollo.imagen , polloX, polloY)
-        let pollo_X = polloX * 80
-        let pollo_Y = polloY * 80
+        // let pollo_X = polloX * 80
+        // let pollo_Y = polloY * 80
     }   
 }
 
