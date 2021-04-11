@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../HomePage/home.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <h1>Login</h1>
+            <img style="height: 50px; height: 50px; "
+                src="https://cdn.icon-icons.com/icons2/632/PNG/512/user_icon-icons.com_57997.png"> 
+            <section id="email" >
+                <label for="email">Usuario</label>
+                <input style="border-bottom: 1px solid #37D1DE;" type="email" id="email" autocomplete="email" required /><br>
+            </section>
+            <section id="password">
+                <label  for="password">Contraseña</label>
+                <!-- <img style="width: 20px; padding-left:2px" src="../white_lock_icon.png"/> -->
+                <input style="border-bottom: 1px solid #37D1DE;" type="password" id="password" required />
+            </section>
+            <section id="recoveryPassword">
+                <p>¿Olvidaste la contraseña?</p>
+            </section>
+            <section id="send">
+                <label for="send"></label> 
+                <input type="submit" id="send" value="Ingresar" />
+            </section>
+        </form>
+    </main>
+    <script src="./login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+/* .Clase
+    #Id */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    text-align: end;
+    font-size: 15px;
+}
+
+main{
+    text-align: center;
+    border: 5px dashed #3FBBFA;
+    width: 350px;
+
+    border-radius: 6px;
+    margin: auto;
+
+}
+
+h1 {
+    color: #37D1DE;
+    margin: 10px;
+}
+
+input{
+    border-radius: 4px;
+    margin: 3px;
+
+
+}
+
+input:focus{
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: #730FF2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+nav{
+    padding-top: 3px;
+}
+
+nav a{
+    padding-top: 0px;
+    text-decoration: none;
+    color: #4e3a3a;
+    margin: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav a:hover{
+color: #0F26F2;
+}
+
+label{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img{
+    margin: 15px;
+    float:left ;
+}
+
+#email{
+    display: inline;
+    width: 45%;
+    margin-top: 5px;
+    border: 0px;
+    background-color: white;
+
+}
+
+#password{
+    display: inline;
+    width: 40%;
+    margin-top: 4px;
+    border: 0px;
+
+}
+
+#recoveryPassword{
+    margin: 15px;
+    cursor: pointer;
+    color: grey;
+    text-align: end;
+    padding-inline-end: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#send{
+    display: inline;
+    padding: 3px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+

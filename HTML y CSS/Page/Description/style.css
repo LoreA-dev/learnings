@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    text-align: end;
+    font-size: 15px;
+}
+
+main{
+    text-align: center;
+    border: 5px dashed #3FBBFA;
+    width: 350px;
+
+    border-radius: 6px;
+    margin: auto;
+
+}
+
+nav{
+    padding-top: 3px;
+}
+
+nav a{
+    padding-top: 0px;
+    text-decoration: none;
+    color: #4e3a3a;
+    margin: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav a:hover{
+    color: #0F26F2;
+    }

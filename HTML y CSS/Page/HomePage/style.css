@@ -1,0 +1,105 @@
+nav{
+    text-align: end;
+    font-size: 15px;
+    margin: 0px;
+    padding-top: 3px;
+
+}
+nav a{
+    padding-top: 0px;
+    text-decoration: none;
+    color: #4e3a3a;
+    margin: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav a:hover{
+    color: #0F26F2;
+}
+
+nav a::after{
+    content: " |";
+}
+
+
+
+/* Shira's animatio */
+
+/* nav a:nth-child(4)::after{
+    content: "";
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --cake-blue: #9BDFC3; 
+    --cake-pink: #D2B1DE; 
+    --cake-brown: #DEC285; 
+}
+
+.shira-container{
+    position: relative;
+    height: 100px;
+    z-index: 1;  
+}
+
+.shiraimg{
+    z-index: 10;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--cake-blue);
+    box-shadow: 0px 0px 10px 5px var(--cake-blue);
+
+    animation: movementX 6s ease-in infinite, 
+        movementY 3s ease-in infinite, 
+        color 6s ease-in infinite;
+    /**position**/
+    /* top: 20px;
+    left: -60px;
+}
+
+@keyframes movementX {
+    from{
+        top: 20px;
+        left: -60px;   
+    }
+
+    to{
+        left: 100vw;  
+    }
+}
+@keyframes movementY {
+    0%{
+        top: 5px;  
+    }
+
+    50%{
+        top: 50px;  
+    }
+
+    100%{
+        top: 5px;  
+    }
+}
+
+@keyframes color {
+    0%{
+        border: 2px solid var(--cake-blue);
+        box-shadow: 0px 0px 10px 5px var(--cake-blue);
+    }
+
+    50%{
+        border: 2px solid var(--cake-pink);
+        box-shadow: 0px 0px 10px 5px var(--cake-pink); 
+    }
+
+    100%{
+        border: 2px solid var(--cake-brown);
+        box-shadow: 0px 0px 10px 5px var(--cake-brown);  
+    }
+}  */

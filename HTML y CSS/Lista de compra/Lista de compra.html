@@ -27,7 +27,8 @@
         <h1 style="margin-left: 12px; ">¿Qué comprar?</h1>
         <p style="margin-left: 12px; padding-top: 20px;">Agrega un item con su categoria: </p>
         <input type="text" placeholder="Nombre del item" id="itemName" />
-        <select id="category">
+        <select id="category" >
+            <option value="selecciona">Selecciona</option>
             <option value="frutas">Frutas</option>
             <option value="carnes">Carnes</option>
             <option value="embutidos">Embutidos</option>
@@ -115,13 +116,13 @@
         </ul>
 
     </main>
-    <form onsubmit="receiveForm(event)">
+    <form onsubmit="receiveForm(event)" >
         <br><h3 style="margin-left: 5px;">¿Compraste todos los items?</h3> 
-        <input style="margin-left: 5px;" type="radio" id="yes" name="confirmation" value="yes">
-        <label for="yes">Si</label><br>  
-        <input style="margin-left: 5px;" type="radio" id="no" name="confirmation" value="no">
-        <label for="no">No</label><br>  
-        <br><input style="padding-top: 0px; margin-left: 10px; height: 21px; width: 80px;" type="submit" value="Aceptar" id="aceptar"><br/>
+        <input style="margin-left: 5px;" type="radio" id="yes" name="confirmation" value="yes" required />
+        <label for="yes">Si</label> <br/>  
+        <input style="margin-left: 5px;" type="radio" id="no" name="confirmation" value="no" />
+        <label for="no">No</label> <br/>  
+        <br><input style="padding-top: 0px; margin-left: 10px; height: 21px; width: 80px;" type="submit" value="Aceptar" id="aceptar" /> <br/>
     </form>
     <footer>
         <img style="width: 98.5vw;height: 60px; ;transform: rotate(180deg)" src="http://speedywheels.com.au/wp-content/uploads/2016/10/paint-splatter-600x224.png"/>
