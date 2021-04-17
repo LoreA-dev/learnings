@@ -5,6 +5,7 @@
 }
 
 html{
+    height: 100vh;
     padding: 0px;
     margin: 0px;
 }
@@ -48,7 +49,6 @@ nav a{
 
 nav a:hover{
     color: #f57b65;
-    ;
 }
 
 nav a::after{
@@ -56,7 +56,7 @@ nav a::after{
 }
 
 
-nav a:nth-child(4)::after{
+nav a:nth-child(3)::after{
     content: "";
 }
 
@@ -66,6 +66,7 @@ nav a:nth-child(4)::after{
     position: relative;
     top: 15px;
     right: 45px;
+    background: none;
     
 }
 
@@ -86,7 +87,6 @@ nav a:nth-child(4)::after{
 
 button{
     border: 0px;
-    background-color: transparent;
 }
 button:focus{
     outline: none;
@@ -95,10 +95,15 @@ button:focus{
 main{
     height: 500px;
 }
+
+.parent_container{
+    max-height: 700px ;
+}
+
 .wave{
+    position: absolute;
     height: 289px;
     z-index: -1;
-    position: absolute;
     width: 1351px;
 }
 
@@ -145,10 +150,6 @@ main{
     color: #395a6c;
 }
 
-.buttonsInside{
-
-}
-
 .buttonsInside button{
     position: relative;
     left: 8%;
@@ -164,31 +165,124 @@ main{
     cursor: pointer;
 }
 
-#botton1{
+#button1{
     border: none;
     background: #fbbc9c ;
+}
+#button2{
+    background: transparent ;
 }
 
 
 .cards_container{
-    display: inline-block;
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 .card{
-    background-color: white;
-    box-shadow: 0px 0px 20px 8px rgb(219, 214, 214);
-    border-radius: 5px ;
+    box-shadow: 0px 0px 20px 4px rgb(219, 214, 214);
+    border-radius: 15px ;
     display: inline-block;
     position: relative;
-    width: 200px;
-    height: 260px;
-    left: 150px ;
+    width: 230px;
+    height: 310px;
     margin: 100px 23px;
 }
 
-#card1, #card2, #card3, #card4{
+#card1, #card2, #card3{
     text-align: center;
+    padding: 30px;
+    
 }
+#card1{
+    border-top: 7px solid rgb(232,144,236);
+}
+#card2{
+    border-top: 7px solid rgb(86,80,87);
+}
+#card3{
+    border-top: 7px solid rgb(97,174,196);
+}
+
+.textInside{
+    padding: 7px;
+    text-align: justify;
+    font-family: 'Barlow', sans-serif;
+    
+}
+
+.titleText{
+    text-align: center;
+    padding: 4px;
+}
+
+#instagramText{
+    color: plum;
+}
+#githubText {
+    color: gray;
+}
+#twitterText{
+    color: skyblue;
+}
+
+.cardButton{
+    border-radius: 15px;
+    padding: 4px;
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+
+}
+
+.instagramImage , .githubImage , .twitterImage{
+    height: 80px;
+    width: 80px;
+}
+
+.textInside button{
+    position: relative;
+    left: 8%;
+
+}
+
+.textInside #instagramButton{
+    background: rgb(232,144,236);
+    background: linear-gradient(90deg, rgba(232,144,236,1) 14%, rgba(191,55,170,1) 91%);
+    
+}
+.textInside #githubButton{
+    background: rgb(86,80,87);
+    background: linear-gradient(90deg, rgba(86,80,87,1) 14%, rgba(115,94,111,1) 91%);
+}
+.textInside #twitterButton{
+    background: rgb(97,174,196);
+    background: linear-gradient(90deg, rgba(97,174,196,1) 14%, rgba(115,147,182,1) 91%);
+}
+
+.navbarImage{
+    position: relative;
+    width: 135px;
+    height: 50px;
+    float: left;
+    padding: 5px;
+    left: 50px;
+    
+}
+
+
+.homepageImage{
+    float: right;
+    position: relative;
+    height: 550px;
+    width: 550px;
+    right: 50px;
+}
+
+/* Cards style color
 
 #boxInside1, #boxInside2, #boxInside3, #boxInside4{
     position: relative;
@@ -211,28 +305,11 @@ main{
 
 #boxInside4{
     background-color: #8EBCFF;
-}
-
-.imageNavbar{
-    position: relative;
-    width: 110px;
-    height: 50px;
-    float: left;
-    padding: 5px;
-    left: 50px;
-    
-}
+} */
 
 
-.imageHomepage{
-    float: right;
-    position: relative;
-    height: 550px;
-    width: 550px;
-    right: 50px;
-}
-/* Shira's animatio */
 
+/* Shira's animation */
 
 /* img{
     height: 100%;

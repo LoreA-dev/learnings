@@ -13,13 +13,15 @@
 </head>
 
 <body>
-    <svg class="wave" viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-2.54,147.53 C391.92,169.23 128.94,-22.20 569.13,17.27 L501.41,-3.45 L-0.27,-6.41 Z" style="stroke: none; fill: #f7d9c6;"></path></svg>
+    <svg class="wave" viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M-2.54,147.53 C391.92,169.23 128.94,-22.20 569.13,17.27 L501.41,-3.45 L-0.27,-6.41 Z"
+            style="stroke: none; fill: #f7d9c6;"></path>
+    </svg>
     <header>
         <nav>
             <section class="navbarOptions">
-                <img class="imageNavbar" src="./../img/navbar.png">
+                <img class="navbarImage" src="./../img/navbar.png">
                 <a href="../Description/description.html">Description</a>
-                <a href="../About us/aboutus.html">About us</a>
                 <a class="navMain" href="../Login/login.html">Login</a>
                 <button id="dropdown">
                     <i class="fas fa-caret-down dropdownIcon"></i>
@@ -36,12 +38,13 @@
             <img src="../img/shira.png" alt="" srcset="" class="shiraimg">
         </div> -->
     <main>
-        <section  id="parent_container">
+        <section id="parent_container">
             <section class="main_container">
                 <section class="text_container">
                     <h1 id="main-h1">Welcome to the Home page</h1>
                     <p id="main-p">- LoreA-dev</p>
-                    <hr class="separate"></hr>
+                    <hr class="separate">
+                    </hr>
                 </section>
                 <section id="second_container">
                     <p id="second-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit cum autem dolorum
@@ -50,33 +53,45 @@
                         optio sit voluptate blanditiis dignissimos?</p>
                 </section>
                 <section class="buttonsInside">
-                    <button id="botton1">Got it!</button>
-                    <button>Not got it!</button>
+                    <button id="button1">Got it!</button>
+                    <button id="button2">Not got it!</button>
                 </section>
             </section>
-            <img class="imageHomepage" src="./../img/homepage.png">
+            <img class="homepageImage" src="./../img/homepage.png">
         </section>
     </main>
     <section class="cards_container">
+        <!-- <p> Social Networks 
+        </p> -->
         <div class="card" id="card1">
             <div class="inside" id="boxInside1">
+                <img class="instagramImage" src="./../img/Instagram.png">
+            </div>
+            <div class="textInside">
+                <p class="titleText" id="instagramText">Instagram</p>
+                <p>On my Instagram you can find my normal life. If you want to see, Follow me 😄</p>
+                <a href="https://www.instagram.com/lore_at21/"><button class="cardButton" id="instagramButton">Go ahead</button></a>
             </div>
 
         </div>
         <div class="card" id="card2">
             <div class="inside" id="boxInside2">
-
+                <img class="githubImage" src="./../img/Github1.png">
             </div>
-
+            <div class="textInside">
+                <p class="titleText" id="githubText">Github</p>
+                <p>I used Github to show my progress in programing. Please, support me ✨</p>
+                <a href="https://github.com/LoreA-dev"><button class="cardButton" id="githubButton">Go ahead</button></a>
+            </div>
         </div>
         <div class="card" id="card3">
             <div class="inside" id="boxInside3">
-
+                <img class="twitterImage" src="./../img/icons8-twitter-100.png">
             </div>
-        </div>
-        <div class="card" id="card4">
-            <div class="inside" id="boxInside4">
-
+            <div class="textInside">
+                <p class="titleText" id="twitterText">Twitter</p>
+                <p>I don't know how to use Twitter, but i'm learning. Follow me if you want 😎</p>
+               <a href="https://twitter.com/RLore_A"><button class="cardButton" id="twitterButton">Go ahead</button></a> 
             </div>
         </div>
     </section>
