@@ -6,23 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleHome.css">
+    <link rel="icon" href="./../img/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <svg class="wave" viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-2.54,147.53 C391.92,169.23 128.94,-22.20 569.13,17.27 L501.41,-3.45 L-0.27,-6.41 Z" style="stroke: none; fill: #f7d9c6;"></path></svg>
     <header>
         <nav>
-            <a class="navMain" href="../Login/login.html">Login</a>
-            <a href="../Description/description.html">Description</a>
-            <a href="">Courses</a>
-            <a href="../About us/aboutus.html">About us</a>
+            <section class="navbarOptions">
+                <img class="imageNavbar" src="./../img/navbar.png">
+                <a href="../Description/description.html">Description</a>
+                <a href="../About us/aboutus.html">About us</a>
+                <a class="navMain" href="../Login/login.html">Login</a>
+                <button id="dropdown">
+                    <i class="fas fa-caret-down dropdownIcon"></i>
+                </button>
+                <section class="hidden" id="buttonsInsideDropdown">
+                    <button>Hola</button>
+                    <button>Si</button>
+                    <button>No</button>
+                </section>
+            </section>
         </nav>
-        <!-- <div class="shira-container">
+    </header>
+    <!-- <div class="shira-container">
             <img src="../img/shira.png" alt="" srcset="" class="shiraimg">
         </div> -->
-    </header>
     <main>
+        <section  id="parent_container">
+            <section class="main_container">
+                <section class="text_container">
+                    <h1 id="main-h1">Welcome to the Home page</h1>
+                    <p id="main-p">- LoreA-dev</p>
+                    <hr class="separate"></hr>
+                </section>
+                <section id="second_container">
+                    <p id="second-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit cum autem dolorum
+                        doloribus? Voluptatum minima vel ut, quos corrupti, distinctio facere, suscipit tenetur quis
+                        sunt
+                        optio sit voluptate blanditiis dignissimos?</p>
+                </section>
+                <section class="buttonsInside">
+                    <button id="botton1">Got it!</button>
+                    <button>Not got it!</button>
+                </section>
+            </section>
+            <img class="imageHomepage" src="./../img/homepage.png">
+        </section>
     </main>
+    <section class="cards_container">
+        <div class="card" id="card1">
+            <div class="inside" id="boxInside1">
+            </div>
+
+        </div>
+        <div class="card" id="card2">
+            <div class="inside" id="boxInside2">
+
+            </div>
+
+        </div>
+        <div class="card" id="card3">
+            <div class="inside" id="boxInside3">
+
+            </div>
+        </div>
+        <div class="card" id="card4">
+            <div class="inside" id="boxInside4">
+
+            </div>
+        </div>
+    </section>
+    <script src="./home.js"></script>
+    <script src="https://kit.fontawesome.com/646e009a51.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

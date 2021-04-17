@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+    overflow-y: scroll;
+    
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #888;
+}
+
+body::-webkit-scrollbar{
+    width: 5.5px;
+}
+
+nav{
+    text-align: end;
+    font-size: 16px;
+    margin: 0px;
+    padding-top: 3px;
+    width: 100%;
+    height: 60px;
+    padding-right: 8px;
+    position: relative;
+    
+    
+}
+nav a{
+    position: relative;
+    right: 45px;
+    top: 15px;
+    padding-top: 0px;
+    text-decoration: none;
+    color: #4e3a3a;
+    margin: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav a:hover{
+    color: #f57b65;
+    ;
+}
+
+nav a::after{
+    content: " |";
+}
+
+
+nav a:nth-child(4)::after{
+    content: "";
+}
+
+
+#dropdown{
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    right: 45px;
+    
+}
+
+
+#buttonsInsideDropdown{
+    width: 30px;
+    height: 55px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    position: absolute;
+    right: 0px;
+
+}
+
+.hidden{
+    display: none;
+}
+
+button{
+    border: 0px;
+    background-color: transparent;
+}
+button:focus{
+    outline: none;
+}
+
+main{
+    height: 500px;
+}
+.wave{
+    height: 289px;
+    z-index: -1;
+    position: absolute;
+    width: 1351px;
+}
+
+.main_container{
+    display: inline-block;
+    position: relative;
+    left: 5px;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 90px 25px;
+    width: 600px;
+    height: 550px;
+    margin: 10px 50px;
+    
+}
+
+.text_container #main-h1{
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    color: #fa755c;
+    font-size: 45px;
+}
+.text_container #main-p{
+    display: inline-block;
+    font-family: 'Nunito', sans-serif; 
+    color: #395a6c;  
+    font-size: 25px;
+    margin: 2px 0 0 0;
+}
+
+.separate{
+  position: relative; 
+  border: 2px solid #fbbc9c;
+  border-radius: 2px;
+  height: 1px;
+  width: 90px;
+  margin: 20px 0;
+}
+
+#second-p{
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;   
+    font-size: 18px;
+    color: #395a6c;
+}
+
+.buttonsInside{
+
+}
+
+.buttonsInside button{
+    position: relative;
+    left: 8%;
+    display: inline-block;
+    margin: auto;
+    width: 35%;
+    padding: 8px;
+    border: 2px solid #fbbc9c;
+    border-radius: 15px;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+#botton1{
+    border: none;
+    background: #fbbc9c ;
+}
+
+
+.cards_container{
+    display: inline-block;
+}
+
+.card{
+    background-color: white;
+    box-shadow: 0px 0px 20px 8px rgb(219, 214, 214);
+    border-radius: 5px ;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 260px;
+    left: 150px ;
+    margin: 100px 23px;
+}
+
+#card1, #card2, #card3, #card4{
+    text-align: center;
+}
+
+#boxInside1, #boxInside2, #boxInside3, #boxInside4{
+    position: relative;
+    background-color: #BBA8E0;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#boxInside1{
+    background-color: #75FFB8;
+}
+#boxInside2{
+    background-color: #FF9FC1;
+}
+#boxInside3{
+    background-color: #D9DA73;
+}
+
+#boxInside4{
+    background-color: #8EBCFF;
+}
+
+.imageNavbar{
+    position: relative;
+    width: 110px;
+    height: 50px;
+    float: left;
+    padding: 5px;
+    left: 50px;
+    
+}
+
+
+.imageHomepage{
+    float: right;
+    position: relative;
+    height: 550px;
+    width: 550px;
+    right: 50px;
+}
+/* Shira's animatio */
+
+
+/* img{
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --cake-blue: #9BDFC3; 
+    --cake-pink: #D2B1DE; 
+    --cake-brown: #DEC285; 
+}
+
+.shira-container{
+    position: relative;
+    height: 100px;
+    z-index: 1;  
+}
+
+.shiraimg{
+    z-index: 10;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--cake-blue);
+    box-shadow: 0px 0px 10px 5px var(--cake-blue);
+
+    animation: movementX 6s ease-in infinite, 
+        movementY 3s ease-in infinite, 
+        color 6s ease-in infinite; */
+    /**position**/
+    /* top: 20px;
+    left: -60px;
+}
+
+@keyframes movementX {
+    from{
+        top: 20px;
+        left: -60px;   
+    }
+
+    to{
+        left: 100vw;  
+    }
+}
+@keyframes movementY {
+    0%{
+        top: 5px;  
+    }
+
+    50%{
+        top: 50px;  
+    }
+
+    100%{
+        top: 5px;  
+    }
+}
+
+@keyframes color {
+    0%{
+        border: 2px solid var(--cake-blue);
+        box-shadow: 0px 0px 10px 5px var(--cake-blue);
+    }
+
+    50%{
+        border: 2px solid var(--cake-pink);
+        box-shadow: 0px 0px 10px 5px var(--cake-pink); 
+    }
+
+    100%{
+        border: 2px solid var(--cake-brown);
+        box-shadow: 0px 0px 10px 5px var(--cake-brown);  
+    }
+}  */
