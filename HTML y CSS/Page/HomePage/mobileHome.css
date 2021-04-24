@@ -1,0 +1,97 @@
+@media (max-width: 600px){
+    .navbarImage{
+        left: 0;
+    }
+    .nav a{
+        float: right;
+    }
+    .main_container{
+        padding: 2% 8%;
+        margin: 0;
+        width: 100vw;
+        height: 500px;
+    }
+    .parent_container{
+        background-color: green;
+    }
+
+    .homepageImage{
+        display: none;
+    }
+    .text_container #main-h1{
+        font-size: 3rem;
+    }
+    .text_container #main-p{
+        font-size: 2.8rem;
+        display: block;
+    }
+    #second-p{
+        font-size: 1.5rem;
+        height: 80px;
+        width: 345px;
+        text-align: justify;
+    }
+    .buttonsInside button{
+        width: 35%;
+        font-size: 1.4rem;
+    }
+    .sn_container{
+        margin-bottom: 25px;
+        padding: 10%;
+    }
+
+    .snText{
+        font-size: 3.5rem;
+    }
+
+    .snText::before{
+        margin-left: 0;
+    }
+
+    .cards_container{
+        width: 90%;
+    }
+    .card{
+        width: 390px;
+        height: 130px;
+        text-align: start;
+    }
+    #card1, #card2, #card3{
+        text-align: start;
+        padding: 5%;
+    }
+    .inside{
+        height: 0;
+    }
+    .instagramImage , .githubImage , .twitterImage{
+        height: 80px;
+        width: 80px;
+        padding: 1px;
+    }
+    .titleText{
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .textInside{
+    padding-left: 78px;
+    text-align: right;
+    font-size: 1.4rem;
+    width: 290px;
+    }
+
+    .textInside #mainText{
+    text-align: justify;
+    }
+
+    .cardButton{
+        margin-top: 0;
+        padding: 2px;
+        margin-right: 8px;
+        width: 50%;
+        
+        
+    }   
+    
+}

@@ -6,38 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <meta name="theme-color" content="#1b979b" />
     <link rel="icon" href="./../img/favicon.png">
     <link rel="stylesheet" href="./styleLogin.css">
+    <link rel="stylesheet" href="./mobileLogin.css">
     <link rel="icon" href="./../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <img class="mobileImage" src="./../img/mobilelogin.png">
+    <img class="loginImage" src="./../img/Selva.png">
     <header>
         <nav>
-            <a href="../HomePage/home.html"><i class="fas fa-home"></i></a>
+            <a href="../HomePage/home.html"><i class="fas fa-home homeIcon"></i></a>
+            <!-- <img class="navbarImage" src="./../img/navbar.png"> -->
         </nav>
     </header>
     <main>
-        <form>
-            <h1>Inicia sesion</h1>
-            <section class="email-container" >
-                <i class="fas fa-user userIcon"></i> 
-                <label for="email">Email </label>
-                <input type="email" class="email" autocomplete="email" required /><br>
-            </section>
-            <section class="password-container">
-                <i class="fas fa-unlock-alt passwordIcon"></i>
-                <label  for="password">Contraseña</label>
-                <!-- <img style="width: 20px; padding-left:2px" src="../white_lock_icon.png"/> -->
-                <input type="password" class="password" required />
-            </section>
-            <section class="recoveryPassword">
-                <a href="#">¿Olvidaste la contraseña?</a>
-            </section>
-            <section class="send">
-                <input type="submit" class="send" value="Ingresar" />
-            </section>
-        </form>
+        <div class="loginForm">
+            <form>
+                <h1>Log in</h1>
+                <section class="email-container">
+                    <section class="text-container">
+                        <i class="fas fa-user userIcon"></i>
+                        <label class="emailText" for="email">Email </label>
+                    </section>
+                    <input type="email" class="email" autocomplete="email" required /><br>
+                </section>
+                <section class="password-container">
+                    <section class="text-container">
+                        <i class="fas fa-unlock-alt passwordIcon"></i>
+                        <label for="password">Contraseña</label>
+                    </section>
+                    <!-- <img style="width: 20px; padding-left:2px" src="../white_lock_icon.png"/> -->
+                    <input type="password" class="password" required />
+                </section>
+                <section class="recoveryPassword">
+                    <a href="#">Forgot password?</a>
+                </section>
+                <section class="send">
+                    <input type="submit" class="send" value="Log in" />
+                </section>
+                <section class="createAcount">
+                    <a href="./register.html">Don't have an account yet?</a>
+                </section>
+            </form>
+        </div>
     </main>
     <script src="./login.js"></script>
     <script src="https://kit.fontawesome.com/646e009a51.js" crossorigin="anonymous"></script>

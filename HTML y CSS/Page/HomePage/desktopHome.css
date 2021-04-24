@@ -8,12 +8,13 @@ html{
     height: 100vh;
     padding: 0px;
     margin: 0px;
+    font-size: 62.5%;
 }
 
 body{
     margin: 0px;
     overflow-y: scroll;
-    
+
 }
 
 body::-webkit-scrollbar-thumb{
@@ -26,15 +27,15 @@ body::-webkit-scrollbar{
 
 nav{
     text-align: end;
-    font-size: 16px;
+    font-size: 1.6rem;
     margin: 0px;
     padding-top: 3px;
     width: 100%;
     height: 60px;
     padding-right: 8px;
-    position: relative;
-    
-    
+
+
+
 }
 nav a{
     position: relative;
@@ -67,7 +68,7 @@ nav a:nth-child(3)::after{
     top: 15px;
     right: 45px;
     background: none;
-    
+
 }
 
 
@@ -81,20 +82,20 @@ nav a:nth-child(3)::after{
 
 }
 
+
 .hidden{
     display: none;
 }
 
-button{
+.buttonsInside, #dropdown{
     border: 0px;
+    background: none;
 }
+
 button:focus{
     outline: none;
 }
 
-main{
-    height: 500px;
-}
 
 .parent_container{
     max-height: 700px ;
@@ -109,44 +110,42 @@ main{
 
 .main_container{
     display: inline-block;
-    position: relative;
-    left: 5px;
-    margin-top: 15px;
-    margin-left: 15px;
     padding: 90px 25px;
+    margin: 10px 50px;
     width: 600px;
     height: 550px;
-    margin: 10px 50px;
-    
+
 }
+
 
 .text_container #main-h1{
     display: inline-block;
     font-family: 'Nunito', sans-serif;
     color: #fa755c;
-    font-size: 45px;
+    font-size: 4.5rem;
 }
 .text_container #main-p{
     display: inline-block;
-    font-family: 'Nunito', sans-serif; 
-    color: #395a6c;  
-    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    color: #395a6c;
+    font-size: 2.5rem;
     margin: 2px 0 0 0;
 }
 
 .separate{
-  position: relative; 
+  position: relative;
   border: 2px solid #fbbc9c;
   border-radius: 2px;
   height: 1px;
   width: 90px;
   margin: 20px 0;
+  background:#fbbc9c ;
 }
 
 #second-p{
     display: inline-block;
-    font-family: 'Nunito', sans-serif;   
-    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.8rem;
     color: #395a6c;
 }
 
@@ -159,26 +158,60 @@ main{
     padding: 8px;
     border: 2px solid #fbbc9c;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 1.5rem;
     margin-top: 50px;
     margin-right: 25px;
     cursor: pointer;
+    transition: .5s all;
+   
+}
+
+.buttonsInside button:hover{
+    transform: scale(1.05);
 }
 
 #button1{
+    color: white;
     border: none;
-    background: #fbbc9c ;
+    background: #acbcc0 ;
 }
 #button2{
     background: transparent ;
 }
 
+.sn_container{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 5px solid green; */
+    height: 80px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.snText{
+    display: inline;
+    font-size: 3.8rem;
+    color: #395a6c;
+    font-family: 'Nunito', sans-serif;
+}
+
+.snText::before{
+    display: inline;
+    content: "|";
+    width: 10px;
+    height: 30px;
+    background-color: #db5a4d ;
+    color: #db5a4d;
+    margin: 15px;
+    margin-left: 80px;
+}
 
 .cards_container{
     width: 80%;
     margin: 0px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
 
 }
 
@@ -186,16 +219,19 @@ main{
     box-shadow: 0px 0px 20px 4px rgb(219, 214, 214);
     border-radius: 15px ;
     display: inline-block;
-    position: relative;
     width: 230px;
     height: 310px;
-    margin: 100px 23px;
+    margin: 15px 23px;
+    transition: .5s all;
 }
 
+.card:hover{
+    transform: scale(1.05);
+}
 #card1, #card2, #card3{
     text-align: center;
     padding: 30px;
-    
+
 }
 #card1{
     border-top: 7px solid rgb(232,144,236);
@@ -207,23 +243,31 @@ main{
     border-top: 7px solid rgb(97,174,196);
 }
 
+.inside{
+    height: 75px;
+}
+
 .textInside{
-    padding: 7px;
+    padding: 0.5px 4px;
     text-align: justify;
-    font-family: 'Barlow', sans-serif;
-    
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+
 }
 
 .titleText{
     text-align: center;
     padding: 4px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 #instagramText{
-    color: plum;
+    color: rgb(173, 100, 173);
 }
 #githubText {
-    color: gray;
+    color: rgb(105, 101, 101);
 }
 #twitterText{
     color: skyblue;
@@ -234,7 +278,9 @@ main{
     padding: 4px;
     width: 80%;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
 
 }
 
@@ -246,21 +292,20 @@ main{
 .textInside button{
     position: relative;
     left: 8%;
-
 }
 
 .textInside #instagramButton{
     background: rgb(232,144,236);
     background: linear-gradient(90deg, rgba(232,144,236,1) 14%, rgba(191,55,170,1) 91%);
-    
+
 }
 .textInside #githubButton{
-    background: rgb(86,80,87);
-    background: linear-gradient(90deg, rgba(86,80,87,1) 14%, rgba(115,94,111,1) 91%);
+    background: rgb(141,157,162);
+    background: linear-gradient(90deg, rgba(141,157,162,1) 14%, rgba(101,109,119,1) 91%);
 }
 .textInside #twitterButton{
-    background: rgb(97,174,196);
-    background: linear-gradient(90deg, rgba(97,174,196,1) 14%, rgba(115,147,182,1) 91%);
+    background: rgb(158,209,224);
+    background: linear-gradient(90deg, rgba(158,209,224,1) 14%, rgba(119,166,226,1) 91%);
 }
 
 .navbarImage{
@@ -270,7 +315,7 @@ main{
     float: left;
     padding: 5px;
     left: 50px;
-    
+
 }
 
 
@@ -317,15 +362,15 @@ main{
 }
 
 :root{
-    --cake-blue: #9BDFC3; 
-    --cake-pink: #D2B1DE; 
-    --cake-brown: #DEC285; 
+    --cake-blue: #9BDFC3;
+    --cake-pink: #D2B1DE;
+    --cake-brown: #DEC285;
 }
 
 .shira-container{
     position: relative;
     height: 100px;
-    z-index: 1;  
+    z-index: 1;
 }
 
 .shiraimg{
@@ -337,8 +382,8 @@ main{
     border: 2px solid var(--cake-blue);
     box-shadow: 0px 0px 10px 5px var(--cake-blue);
 
-    animation: movementX 6s ease-in infinite, 
-        movementY 3s ease-in infinite, 
+    animation: movementX 6s ease-in infinite,
+        movementY 3s ease-in infinite,
         color 6s ease-in infinite; */
     /**position**/
     /* top: 20px;
@@ -348,24 +393,24 @@ main{
 @keyframes movementX {
     from{
         top: 20px;
-        left: -60px;   
+        left: -60px;
     }
 
     to{
-        left: 100vw;  
+        left: 100vw;
     }
 }
 @keyframes movementY {
     0%{
-        top: 5px;  
+        top: 5px;
     }
 
     50%{
-        top: 50px;  
+        top: 50px;
     }
 
     100%{
-        top: 5px;  
+        top: 5px;
     }
 }
 
@@ -377,11 +422,11 @@ main{
 
     50%{
         border: 2px solid var(--cake-pink);
-        box-shadow: 0px 0px 10px 5px var(--cake-pink); 
+        box-shadow: 0px 0px 10px 5px var(--cake-pink);
     }
 
     100%{
         border: 2px solid var(--cake-brown);
-        box-shadow: 0px 0px 10px 5px var(--cake-brown);  
+        box-shadow: 0px 0px 10px 5px var(--cake-brown);
     }
 }  */

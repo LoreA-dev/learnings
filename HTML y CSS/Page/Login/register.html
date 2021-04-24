@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="./../img/favicon.png">
+    <link rel="stylesheet" href="./styleRegister.css">
+    <link rel="stylesheet" href="./mobileRegister.css">
+    <link rel="icon" href="./../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img class="mobileImage" src="./../img/mobilelogin.png">
+    <img class="registerImage" src="./../img/Selva.png">
+    <header>
+        <nav>
+            <a href="../HomePage/home.html"><i class="fas fa-home homeIcon"></i></a>
+            <!-- <img class="navbarImage" src="./../img/navbar.png"> -->
+        </nav>
+    </header>
+    <main>
+        <div class="registerForm">
+            <form>
+                <h1>Register</h1>
+                <section class="register-container">
+                    <section class="text1-container">
+                        <section class="text-name">
+                            <i class="fas fa-user userIcon"></i>
+                            <label for="name">Name</label>
+                            <input type="text" class="name" autocomplete="name" required />
+                        </section>
+                    </section>
+                    <section class="text2-container">
+                        <section class="text-email">
+                            <i class="far fa-envelope emailIcon"></i>
+                            <label for="email">Email</label>
+                            <input type="email" class="email" required />
+                        </section>
+                        <section class="text-password">
+                            <i class="fas fa-key passwordIcon"></i>
+                            <label for="password">Password</label>
+                            <input type="password" class="password" required />
+                        </section>
+                        <section class="text-confirmpassword">
+                            <i class="fas fa-key passwordIcon"></i>
+                            <label for="confirmpassword">Confirm password</label>
+                            <input type="password" class="confirmpassword" required />
+                        </section>
+                    </section>
+                </section>
+                <section class="send">
+                    <input type="submit" class="send" value="Register" />
+                </section>
+                <section class="login">
+                    <a href="./login.html">Have an account?</a>
+                </section>
+            </form>
+        </div>
+    </main>
+    <script src="./login.js"></script>
+    <script src="https://kit.fontawesome.com/646e009a51.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

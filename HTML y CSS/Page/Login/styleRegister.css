@@ -1,5 +1,3 @@
-/* .Clase
-    #Id */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -21,23 +19,22 @@ header{
     font-size: 1.5rem;
 }
 
-main .loginForm{
+main .registerForm{
     text-align: center;
-    height: 450px;
+    height: 560px;
     width: 400px;
     padding: 30px;
     float: right;
-    margin-top: 4%;
+    margin-top: 0.5%;
     margin-right: 15%;
     border-radius: 25px;
-    border: 0;
-    /* box-shadow: 0 0 8px 0.1px #3b6447; */
+    /* border: 0; */
 
 }
 
 h1 {
     color: #040f09;
-    margin: 20px 10px;
+    margin: 10px 10px;
     font-size: 3.5rem;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -88,26 +85,30 @@ nav a:hover{
 
 
 .userIcon,
-.passwordIcon{
+.passwordIcon, .emailIcon{
     color: #04645c;
 
 }
-.text-container{
+.text1-container, .text2-container{
     text-align: start;
     font-size: 1.8rem;
     margin-bottom: 7px;
 }
+.text-name, .text-email, .text-password, .text-confirmpassword{
+    margin: 15px;
+    width: 260px;
+}
 
-.email-container,.password-container {
+.register-container{
     width: 320px;
     display: inline-block;
     margin-top: 15px;
     color: #245454;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0 10%;
+    padding: 0 5%;
 }
-.email, .password{
+.name,.email, .password, .confirmpassword{
     display: block;
     font-size: 1.5rem;
     margin-top: 5px;
@@ -117,7 +118,7 @@ nav a:hover{
     border-radius: 15px;
     justify-self: flex-end;
     padding: 0 10px;
-    /* border-bottom: 1px solid rgb(182, 141, 230); */
+
 }
 
 
@@ -127,7 +128,7 @@ nav a:hover{
     padding-inline-end: 45px;
 }
 
-.recoveryPassword a, .createAcount a{
+.login a{
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
     font-size: 1.5rem; 
@@ -142,25 +143,13 @@ nav a:hover{
 }
 
 
-/* .navbarImage{
-    position: relative;
-    width: 135px;
-    height: 50px;
-    float: left;
-    padding: 5px;
-    left: 50px;
-
-} */
-
-.loginImage{
+.registerImage{
     position: absolute;
     width: 750px;
     height: 100vh;
 }
 
+
 .mobileImage{
     display: none;
 }
-
-
-

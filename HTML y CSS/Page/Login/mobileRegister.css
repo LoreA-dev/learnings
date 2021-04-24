@@ -1,0 +1,32 @@
+@media (max-width: 600px){
+    nav .homeIcon{
+        color: white;
+        text-shadow: 5px 4px 12px  black;
+        font-size: 3.2rem;
+    }
+    main .registerForm{
+        margin: 0;
+        width: 100vw;
+        padding: 0;
+    }
+    h1, .register-container{
+        margin: 0;
+    }
+    .registerImage{
+        display: none;
+    }
+    .mobileImage{
+        position: absolute;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+    }
+    .mobileImage{
+        display: block;
+    }
+
+    main .registerForm{
+        margin: 0 auto;
+
+    }
+}

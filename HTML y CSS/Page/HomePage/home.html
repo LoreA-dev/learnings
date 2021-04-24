@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./styleHome.css">
+    <link rel="stylesheet" href="./desktopHome.css">
+    <link rel="stylesheet" href="./mobileHome.css">
+    <link rel="stylesheet" href="./tabletHome.css">
     <link rel="icon" href="./../img/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
@@ -15,7 +17,7 @@
 <body>
     <svg class="wave" viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
         <path d="M-2.54,147.53 C391.92,169.23 128.94,-22.20 569.13,17.27 L501.41,-3.45 L-0.27,-6.41 Z"
-            style="stroke: none; fill: #f7d9c6;"></path>
+            style="stroke: none; fill: #fff1f0;"></path>
     </svg>
     <header>
         <nav>
@@ -27,9 +29,9 @@
                     <i class="fas fa-caret-down dropdownIcon"></i>
                 </button>
                 <section class="hidden" id="buttonsInsideDropdown">
-                    <button>Hola</button>
-                    <button>Si</button>
-                    <button>No</button>
+                    <button class="buttonsInside">Hola</button>
+                    <button class="buttonsInside">Si</button>
+                    <button class="buttonsInside">No</button>
                 </section>
             </section>
         </nav>
@@ -53,45 +55,49 @@
                         optio sit voluptate blanditiis dignissimos?</p>
                 </section>
                 <section class="buttonsInside">
-                    <button id="button1">Got it!</button>
+                    <button id="button1"><strong>Got it!</strong></button>
                     <button id="button2">Not got it!</button>
                 </section>
             </section>
             <img class="homepageImage" src="./../img/homepage.png">
         </section>
     </main>
+    <section class="sn_container">
+        <p class="snText">Social Networks</p>
+    </section>
     <section class="cards_container">
-        <!-- <p> Social Networks 
-        </p> -->
         <div class="card" id="card1">
             <div class="inside" id="boxInside1">
                 <img class="instagramImage" src="./../img/Instagram.png">
             </div>
             <div class="textInside">
                 <p class="titleText" id="instagramText">Instagram</p>
-                <p>On my Instagram you can find my normal life. If you want to see, Follow me 😄</p>
-                <a href="https://www.instagram.com/lore_at21/"><button class="cardButton" id="instagramButton">Go ahead</button></a>
+                <p id="mainText">On my Instagram you can find my normal life. If you want to see, Follow me 😄</p>
+                <a href="https://www.instagram.com/lore_at21/"><button class="cardButton" id="instagramButton">Go
+                        ahead</button></a>
             </div>
 
         </div>
         <div class="card" id="card2">
             <div class="inside" id="boxInside2">
-                <img class="githubImage" src="./../img/Github1.png">
+                <img class="githubImage" src="./../img/Github.png">
             </div>
             <div class="textInside">
                 <p class="titleText" id="githubText">Github</p>
-                <p>I used Github to show my progress in programing. Please, support me ✨</p>
-                <a href="https://github.com/LoreA-dev"><button class="cardButton" id="githubButton">Go ahead</button></a>
+                <p id="mainText">I used Github to show my progress in programing. Please, support me ✨</p>
+                <a href="https://github.com/LoreA-dev"><button class="cardButton" id="githubButton">Go
+                        ahead</button></a>
             </div>
         </div>
         <div class="card" id="card3">
             <div class="inside" id="boxInside3">
-                <img class="twitterImage" src="./../img/icons8-twitter-100.png">
+                <img class="twitterImage" src="./../img/Twitter.png">
             </div>
             <div class="textInside">
                 <p class="titleText" id="twitterText">Twitter</p>
-                <p>I don't know how to use Twitter, but i'm learning. Follow me if you want 😎</p>
-               <a href="https://twitter.com/RLore_A"><button class="cardButton" id="twitterButton">Go ahead</button></a> 
+                <p id="mainText">I don't know how to use Twitter, but i'm learning. Follow me if you want 😎</p>
+                <a href="https://twitter.com/RLore_A"><button class="cardButton" id="twitterButton">Go
+                        ahead</button></a>
             </div>
         </div>
     </section>
