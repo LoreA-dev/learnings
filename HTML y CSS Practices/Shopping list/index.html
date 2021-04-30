@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" /> <!-- //Caracteres especiales -->
+    <meta name="description" content="here is the description of the page" /> <!-- //Descripción de página -->
+    <meta name="robots" content="index,follow" /> <!-- //Robots en busqueda -->
+    <title> Things to buy for the month </title> <!-- //Titulo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- //Distintas pantallas -->
+    <link rel="stylesheet" href="./shoppingListStyle.css"> <!-- //Hipervinculos -->
+</head>
+<body>
+    <header>
+        <nav style="height: 30px;">
+            <img style="width: 98.5vw;height: 50px;" src="http://speedywheels.com.au/wp-content/uploads/2016/10/paint-splatter-600x224.png"/>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <video style="margin: auto; position: fixed; height: 150px; right: 10px; " controls preload="auto">
+            <source src="./Images/Shira baño de sol.mp4" />
+            </video> 
+            <figure>
+                <img style="float:right;width:50vw; height:100vh"  src="./Images/Pequeño.jpg" alt="Carrito de compras"/>
+            </figure>
+        </section>
+        <h1 style="margin-left: 12px; ">¿Qué comprar?</h1>
+        <p style="margin-left: 12px; padding-top: 20px;">Agrega un item con su categoria: </p>
+        <input type="text" placeholder="Nombre del item" id="itemName" />
+        <select id="category" >
+            <option value="selecciona">Selecciona</option>
+            <option value="frutas">Frutas</option>
+            <option value="carnes">Carnes</option>
+            <option value="embutidos">Embutidos</option>
+            <option value="lacteos">Lacteos</option>
+            <option value="granos">Granos</option>
+        </select>
+        <button value="boton" id="boton">Agregar</button>
+        <button value="eliminar" id="eliminar"> 
+            <img style= "width: 20px; margin-bottom: -5px " src="https://cdn2.iconfinder.com/data/icons/thin-line-color-1/21/33-512.png" alt="">
+        </button>
+        <ul id="frutas">
+            <li>Frutas</li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> Manzana </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> Fresas </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> Uvas </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> Peras </label>
+            </li>
+        </ul>    
+        <ul id="carnes">
+            <li>Carnes</li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> 1 Lb Carne molida </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> 1 Pollo entero </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> Mulsos de pollo </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> 1.5 Kg de Cerdo </label>
+            </li>
+        </ul>
+        <ul id="embutidos">
+            <li>Embutidos</li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> 1 Salchichón ranchero/tradicional </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> 1 Tocineta </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> 1 Salchicha </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> 1 Jamón </label>
+            </li>
+        </ul>
+        <ul id="lacteos">
+            <li>Lacteos</li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> 1 Yogurt </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> 1 Queso mozarella </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> 1 SixPack leche deslactosada </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> 1 Quesito </label>
+            </li>
+        </ul>
+        <ul id="granos">
+            <li>Granos</li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> Lentejas </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> Arroz </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> Saragoza </label>
+            </li>
+            <li>
+                <label><input type="checkbox" class="cbox" /> Azucar </label>
+            </li>
+        </ul>
+
+    </main>
+    <form onsubmit="receiveForm(event)" >
+        <br><h3 style="margin-left: 5px;">¿Compraste todos los items?</h3> 
+        <input style="margin-left: 5px;" type="radio" id="yes" name="confirmation" value="yes" required />
+        <label for="yes">Si</label> <br/>  
+        <input style="margin-left: 5px;" type="radio" id="no" name="confirmation" value="no" />
+        <label for="no">No</label> <br/>  
+        <br><input style="padding-top: 0px; margin-left: 10px; height: 21px; width: 80px;" type="submit" value="Aceptar" id="aceptar" /> <br/>
+    </form>
+    <footer>
+        <img style="width: 98.5vw;height: 60px; ;transform: rotate(180deg)" src="http://speedywheels.com.au/wp-content/uploads/2016/10/paint-splatter-600x224.png"/>
+    </footer>
+    <!--// <a href=""></a>  Hipervinculos    --> 
+    <script src="./shoppingList.js"></script>
+</body>
+
+</html>
