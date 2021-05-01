@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+#buttonsPlayer_container{
+    display: flex;
+    margin: 20px auto;
+    height: 100px;
+    width: 100vw;
+    justify-content: center;
+
+}
+#text_container{
+    height: 59vh;
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid greenyellow;
+    text-align: center;
+}
+#buttonsCPU_container{
+    display: flex;
+    margin: 15px auto;
+    height: 100px;
+    width: 100vw;
+    justify-content: center;
+
+}
+
+button{
+    border: none;
+    border: 1px solid rgb(218, 218, 218); 
+    margin: 0px 20px;
+    box-shadow: 0px 0px 20px rgb(218, 218, 218);
+    cursor: pointer;
+}
+#scissor, #rock, #paper, #scissorCPU, #rockCPU, #paperCPU{
+    padding: 10px;
+    width: 100px;
+    border-radius: 50px;
+    font-size: 0;
+}
+
+.scissorIcon, .paperIcon, .rockIcon{
+    color: rgb(85, 84, 84);
+    font-size: 5.5rem;
+    position: relative;
+    text-align: center;
+}
