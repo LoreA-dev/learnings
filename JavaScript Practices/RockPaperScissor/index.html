@@ -9,20 +9,24 @@
 </head>
 <body>
     <main>
-        <section id="buttonsPlayer_container">
-            <button id="rock"><i class="far fa-hand-rock rockIcon"></i>Rock</button>
-            <button id="paper"><i class="far fa-hand-paper paperIcon"></i>Paper</button>
-            <button id="scissor"><i class="far fa-hand-scissors scissorIcon"></i><br>Scissor</button>
+        <section id="user_container" >
+            <p id="userText">USER</p>
+            <section id="buttonsPlayer_container">
+                <button id="rock" class="buttonUSER"><i class="far fa-hand-rock rockIcon"></i>Rock</button>
+                <button id="paper" class="buttonUSER"><i class="far fa-hand-paper paperIcon"></i>Paper</button>
+                <button id="scissor" class="buttonUSER"><i class="far fa-hand-scissors scissorIcon"></i><br>Scissor</button>
+            </section>
         </section>
-        <section id="text_container">
-            <p>
-                HOLAAAAAAAAa
-            </p>
-        </section>
-        <section id="buttonsCPU_container">
-            <button id="rockCPU"><i class="far fa-hand-rock rockIcon"></i>Rock</button>
-            <button id="paperCPU"><i class="far fa-hand-paper paperIcon"></i>Paper</button>
-            <button id="scissorCPU"><i class="far fa-hand-scissors scissorIcon"></i><br>Scissor</button>
+            <section id="result_container">
+                <p id="textInside"> Select one option</p>
+            </section>
+        <section id="cpu_container" >
+            <section id="buttonsCPU_container">
+                <button id="rockCPU" ><i class="far fa-hand-rock rockIcon"></i>Rock</button>
+                <button id="paperCPU" ><i class="far fa-hand-paper paperIcon"></i>Paper</button>
+                <button id="scissorCPU" ><i class="far fa-hand-scissors scissorIcon"></i><br>Scissor</button>
+            </section>
+            <p id="cpuText">CPU</p>
         </section>
     </main>
     <script src="./rockPaperScissors.js"></script>

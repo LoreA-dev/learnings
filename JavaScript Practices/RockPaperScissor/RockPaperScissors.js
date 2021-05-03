@@ -1,41 +1,99 @@
+var options = ["scissor", "paper", "rock"];
 
-var options= [
-    "scissor",
-    "paper",
-    "rock"
-]
+var rockButton = document.getElementById("rock");
+rockButton.addEventListener("click", game);
 
-var rockButton = document.getElementById("rock")
-rockButton.addEventListener("click", game)
+var paperButton = document.getElementById("paper");
+paperButton.addEventListener("click", game);
 
-var paperButton = document.getElementById("paper")
-paperButton.addEventListener("click", game)
+var scissorButton = document.getElementById("scissor");
+scissorButton.addEventListener("click", game);
 
-var scissorButton = document.getElementById("scissor")
-scissorButton.addEventListener("click", game)
-
-function game (event) {
-    var resultCPU = Math.floor(Math.random() * 3);
-    const choosenByUser = event.target.innerText.toLowerCase();
-    // FlAViO -> flavio 
-    if (options[resultCPU] === "scissor" && choosenByUser === 'rock') {
-        console.log("CPU USED SCISSOR, YOU USED ROCK. USER WIN")
-    } else if (options[resultCPU] === "scissor" && choosenByUser === 'scissor') {
-        console.log("CPU USED SCISSOR, YOU USED SCISSOR. TIED")
-    } else if (options[resultCPU] === "scissor" && choosenByUser === 'paper') {
-        console.log("CPU USED SCISSOR, %cYOU USED PAPER. CPU WIN", 'color: red; font-size: 20px;')
-    } else if (options[resultCPU] === "paper" && choosenByUser === 'scissor') {
-        console.log("CPU USED PAPER, YOU USED SCISSOR. USER WIN")
-    } else if (options[resultCPU] === "paper" && choosenByUser === 'rock') {
-        console.log("CPU USED PAPER, YOU USED ROCK. CPU WIN")
-    } else if (options[resultCPU] === "paper" && choosenByUser === 'paper') {
-        console.log("CPU USED PAPER, YOU USED PAPER. TIED")
-    } else if (options[resultCPU] === "rock" && choosenByUser === 'rock'){
-        console.log("CPU USED ROCK,YOU USED ROCK. TIED")
-    } else if (options[resultCPU] === "rock" && choosenByUser === 'paper'){
-        console.log("CPU USED ROCK, YOU USED PAPER. USER WIN ")
-    } else {
-        console.log("CPU USED ROCK, YOU USED SCISSOR. CPU WIN")
+function assignCPUButton(type) {
+    switch (type) {
+        case 'scissor':
+            document.getElementById('scissorCPU').classList.add('selected')
+        break;
+        case 'rock':    
+            document.getElementById('rockCPU').classList.add('selected')
+        break;
+        case 'paper':
+            document.getElementById('paperCPU').classList.add('selected')
+        break;
     }
-    // console.log(options[resultCPU])
+}
+function cleanCPUButtons() {
+    document.getElementById('scissorCPU').classList.remove('selected')
+    document.getElementById('rockCPU').classList.remove('selected')
+    document.getElementById('paperCPU').classList.remove('selected')
+
+}
+
+function colorUSERButton(type) {
+    switch (type) {
+        case 'scissor':
+            document.getElementById('scissor').classList.add('changesButtonUser')
+        break;
+        case 'rock':    
+            document.getElementById('rock').classList.add('changesButtonUser')
+        break;
+        case 'paper':
+            document.getElementById('paper').classList.add('changesButtonUser')
+        break;
+    }
+}
+function cleanUserChanges() {
+    document.getElementById('scissor').classList.remove('changesButtonUser')
+    document.getElementById('rock').classList.remove('changesButtonUser')
+    document.getElementById('paper').classList.remove('changesButtonUser')
+}
+
+function game(event) {
+  cleanCPUButtons()
+  cleanUserChanges()
+  var resultCPU = Math.floor(Math.random() * 3);
+  assignCPUButton(options[resultCPU])
+
+  let choosenByUser = event.target.innerText.toLowerCase();
+  
+  choosenByUser =
+  choosenByUser === ""
+  ? event.target.parentElement.innerText.toLowerCase().trim()
+  : choosenByUser;
+
+  colorUSERButton(choosenByUser)
+  
+  const choices = choosenByUser + "|" + options[resultCPU];
+
+  var result_container = document.getElementById("result_container");
+  result_container.classList.add("result");
+  
+  var text_reset = document.getElementById("textInside");
+  var newText
+  
+
+  switch (choices) {
+    case "scissor|rock":
+      newText = "You used " + choosenByUser + ".<br><br><br> CPU WIN" + "<br><br><br> cpu used " + options[resultCPU] +"."; 
+      break;
+    case "scissor|paper":
+      newText = "You used " + choosenByUser + ".<br><br><br> USER WIN" + "<br><br><br> cpu used " + options[resultCPU] +"."; 
+      break;
+    case "paper|scissor":
+      newText = "You used " + choosenByUser + ".<br><br><br> CPU WIN" +"<br><br><br> cpu used " + options[resultCPU] +"."; 
+      break;
+    case "paper|rock":
+      newText = "You used " + choosenByUser + ".<br><br><br> USER WIN" + "<br><br><br> cpu used " + options[resultCPU] +"."; 
+      break;
+    case "rock|paper":
+      newText = "You used " + choosenByUser + ".<br><br><br> CPU WIN" +"<br><br><br> cpu used " + options[resultCPU] +"." ; 
+      break;
+    case "rock|scissor":
+      newText = "You used " + choosenByUser +  ".<br><br><br> USER WIN" + "<br><br><br> cpu used " + options[resultCPU] +"."; 
+      break;
+    default:
+      newText = "You used " + choosenByUser + ".<br><br><br> TIED" + "<br><br><br> cpu used " + options[resultCPU] +"."; 
+      break;
+  }
+  text_reset.innerHTML = newText;
 }

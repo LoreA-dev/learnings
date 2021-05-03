@@ -6,36 +6,51 @@
 html{
     font-size: 62.5%;
 }
+#userText, #cpuText{ 
+    padding: 5px;
+    text-align: center;
+    font-size: 3.5rem;
+    color: rgb(82, 86, 90);
+}
+
 #buttonsPlayer_container{
     display: flex;
-    margin: 20px auto;
+    margin: 4px auto;
     height: 100px;
     width: 100vw;
     justify-content: center;
 
 }
-#text_container{
-    height: 59vh;
-    width: 50%;
-    margin: 0 auto;
-    border: 2px solid greenyellow;
-    text-align: center;
+#result_container{
+    height: 48vh;
+    width: 410px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 #buttonsCPU_container{
     display: flex;
-    margin: 15px auto;
+    margin: 4px auto;
     height: 100px;
     width: 100vw;
     justify-content: center;
 
 }
 
-button{
+#buttonsPlayer_container button{
     border: none;
     border: 1px solid rgb(218, 218, 218); 
     margin: 0px 20px;
     box-shadow: 0px 0px 20px rgb(218, 218, 218);
     cursor: pointer;
+}
+#buttonsCPU_container button{
+    border: none;
+    border: 1px solid rgb(218, 218, 218); 
+    margin: 0px 20px;
+    box-shadow: 0px 0px 20px rgb(218, 218, 218);
 }
 #scissor, #rock, #paper, #scissorCPU, #rockCPU, #paperCPU{
     padding: 10px;
@@ -50,3 +65,36 @@ button{
     position: relative;
     text-align: center;
 }
+.arrowIcon{
+    color: rgb(85, 84, 84);
+    font-size: 8rem;
+}
+
+.result {
+    padding: 10px;
+    font-size: 3.5rem;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgb(218, 218, 218);
+    border-radius: 10px;
+  }
+
+.buttonResultCPU{
+    background-color: blue;
+}
+
+#textInside{
+    font-size: 3.5rem;
+    padding: 10px;
+}
+
+.selected i, .changesButtonUser i{
+    color: white; 
+}
+
+.changesButtonUser{
+    background-color: rgb(46, 46, 180);
+}
+.selected{
+    background-color: rgb(182, 35, 35);
+}
+  
