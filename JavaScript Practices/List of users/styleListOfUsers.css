@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section{
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    
+}
+input, button{
+    cursor: pointer;
+}
+input:focus{
+    outline: none;
+}
+#acceptButton{
+    width: 100px;
+    border-radius: 5px;
+    padding: 3px;
+    border: none;
+    background: rgb(163, 154, 154);
+    color: rgb(2, 2, 2);
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin: 15px auto;
+    width: 90%;
+
+  }
+  th{
+    background: rgb(0, 0, 0);
+    color: white;
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    font-size: 2rem;
+  }
+  tbody:nth-child(odd) {
+    content: "" ;
+  } 

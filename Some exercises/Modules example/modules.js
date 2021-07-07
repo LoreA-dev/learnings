@@ -1,16 +1,10 @@
-let numeros = 100
-
-for (let i = 1 ; i <= 100; i++)
-{
-    if (i % 3 == 0) {
-    document.write("Fizz")
-    }
-    if ( i % 5 == 0){
-    document.write("Buzz")
-    }
-    if (i % 3 != 0 && i % 5 != 0) {
-        document.write(i)
+for (let numero = 0; numero <= 50; numero++){
+    if (numero %3 === 0 ){
+        document.write( numero + " modulo de 3");
+    } else if (numero %5 === 0) {
+        document.write(numero + " modulo de 5");
+    } else {
+        document.write(numero);
     }
     document.write("<br />")
 }
-
