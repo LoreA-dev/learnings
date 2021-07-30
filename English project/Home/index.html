@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./homeStyleEnglish.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Questions</a>
+    </nav>
+    <main>
+        <section id="mainContainer">
+            <div id="selectContainer">
+                <select id="selectOptions">
+                    <option value="" selected disabled hidden>Select one option</option>
+                    <option value="Past Simple">Past Simple</option>
+                    <option value="Past Continous">Past Continous</option>
+                    <option value="Past Perfect">Past Perfect</option>
+                    <option value="Past Perfect Continous">Past Perfect Continous</option>
+                    <option value="Present Simple">Present Simple</option>
+                    <option value="Present Continous">Present Continous</option>
+                    <option value="Present Perfect">Present Perfect</option>
+                    <option value="Present Perfect Continous">Present Perfect Continous</option>
+                    <option value="Future Simple">Future Simple</option>
+                    <option value="Future Continous">Future Continous</option>
+                    <option value="Future Perfect Simple">Future Perfect Simple</option>
+                    <option value="Future Perfect Continous">Future Perfect Continous</option>
+                    <option value="Others"></option>
+                </select>
+                <button id="doneButton">Done</button>
+            </div>
+            <div id="cardsContainer">
+                <button id="previusButton"><i class="fas fa-arrow-left previusIcon" ></i></button>
+                <div id="cards">
+                    <div id="messageContainer">
+                        <p id="cardMessage">You have to select an option first</p>
+                        <i class="fas fa-search searchIcon"></i>
+                    </div>
+                </div>
+                <button id="nextButton"><i class="fas fa-arrow-right nextIcon" ></i></button>    
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/646e009a51.js" crossorigin="anonymous"></script>
+    <script src="./home.js"></script>
+</body>
+</html>

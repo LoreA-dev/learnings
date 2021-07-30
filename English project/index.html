@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up</title>
+    <link rel="stylesheet" href="./styleEnglish.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="./Home/index.html">Home</a>
+    </nav>
+    <main id="main_container">
+        <form class="addQuestion">
+            <label for="showContent">Agregar pregunta</label>
+            <input id="showContent" type="checkbox">
+        </form>
+        
+        <button id="modalButton"><i class="far fa-question-circle"></i></button>
+        <div id="modal">
+            <div class="modalContent">
+                <span class="close">&times;</span>
+                <p>Here is the text inside the modal</p>
+            </div>
+        </div>
+        <section id="addContent">
+            <input id="question" type="text" placeholder="Write a question">
+            <textarea class="textArea" id="answer" cols="40" rows="2" placeholder="Write the answers here." required></textarea>
+            <button id="acceptButton">Accept</button>
+        </section>
+        <div id="text_container"></div>
+    </main>
+    
+    <script src="./english.js"></script>
+    <script src="https://kit.fontawesome.com/646e009a51.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
