@@ -13,34 +13,45 @@ html{
 }
 #letter{
     display: inline-block;
-    font-size: 80px;
+    font-size: 8rem;
 }
 #number{
     display: inline;
-    font-size: 80px;
+    font-size: 8rem;
     
 }
 #container-random{
     display: flex;
+    border: 2px solid;
     align-content: center;
     justify-content: center;
     height: 300px;
+    width: 100%;
 }
 .valuesContainer{
     display:flex;
     flex-wrap:wrap;
-    gap:1em;
     justify-content: center;
 }
 #created-values {
     text-align: justify;
-    font-size: 1.8rem;
+    font-size: 5rem;
     width: 80%;
     word-break: break-word;
 }
 #container-random{
     align-items: center;
-    width: 50%;
+    width: 100%;
+    height: 150px; 
+}
+.newValueContainer, .bingoContainer{
+    font-size: 5rem;
+}
+.bingoContainer{
+    margin: 0 auto;
+    margin-top: 15px;
+    display: inline-block;
     height: 150px;
-    
+    width: 150px;
+    border: skyblue 2px solid;
 }
