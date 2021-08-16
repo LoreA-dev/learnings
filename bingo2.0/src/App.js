@@ -1,7 +1,9 @@
 import React from "react";
 import BingoContainer from "./bingoContainer";
-
+import CardsContainer from './RandomCardsContainer'
+import Helpers from './helpers/helper'
 function App() {
+  const [section, setSection] = React.useState("cards"); 
   const [letter, setLetter] = React.useState("H");
   const [number, setNumber] = React.useState("i!");
   const [randomInterval, setRandomInterval] = React.useState(null);
@@ -50,13 +52,7 @@ function App() {
       setRandomInterval(null);
     }
   };
-  const countFromToArray = (start, end) =>{
-    const result = []
-    for (let index = start; index < end; index++) {
-      result.push(index)      
-    }
-    return result
-  }
+
   const random = () => {
     const random_letter = Math.floor(Math.random() * 5);
     const max = bingoConfigs[BINGO[random_letter]].limit + 1;
@@ -74,9 +70,7 @@ function App() {
 
       if(repeatCounter > 1){
         //checking inside of current status
-        const start = bingoConfigs[letter].limit - 14,
-              end = bingoConfigs[letter].limit + 1;
-        const completeLetterNumberList = countFromToArray(start, end); 
+        const completeLetterNumberList = Helpers.getPossibleValues(letter)
         const onlyCurrentNumbers = randomResults[letter]
         const missingNumbers = completeLetterNumberList.filter((item)=>!onlyCurrentNumbers.includes(item))
         setLetter(random_letter)
@@ -84,7 +78,6 @@ function App() {
         randomResults[letter].push(missingNumbers[0]);
         talk(letter + missingNumbers[0])
         setRepeatCounter(1)
-        console.log({start, end, completeLetterNumberList, missingNumbers})
       }
       console.log("Repetido");
     }
@@ -99,11 +92,19 @@ function App() {
   const buttonPauseClass = randomInterval
     ? "buttons buttonPause"
     : "buttons buttonPlay";
-
+  const switchSection = (evt)=>{
+    if(section === 'bingo')
+      setSection("cards")
+      else 
+      setSection("bingo")
+  }
   return (
     <div className="App">
       <div className="bingoHeader">
         <div className="buttonsContainer">
+          <button className="buttons" onClick={switchSection}>
+           {section === "bingo" ? "See Cards": "See Bingo"}
+          </button>
           <button className="buttons" onClick={random}>
             Click
           </button>
@@ -121,7 +122,11 @@ function App() {
           <p className="number">{number}</p>
         </div>
       </div>
-      <BingoContainer data={randomResults} configs={bingoConfigs} />
+      {
+        section === 'bingo' 
+          ? <BingoContainer data={randomResults} configs={bingoConfigs} />
+          : <CardsContainer/>
+      }
     </div>
   );
 }
