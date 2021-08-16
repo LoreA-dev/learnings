@@ -62,6 +62,12 @@ code {
   flex-direction: column;
   border: 2px solid;
   width: 150px;
-  height: 99vh;
+  /* height: 99vh; */
   margin: 0 2px;
+}
+
+@media (max-width: 920px) { 
+  .App{
+    flex-direction: column;
+  }
 }
