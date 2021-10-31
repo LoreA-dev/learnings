@@ -43,7 +43,6 @@ const RandomCardsContainer = () => {
       O: posibilities.O.splice(0, 5),
     };
   };
-  console.log(currentCards);
   return (
     <div className="fullBingoContainer" style={{ flexDirection: "column" }}>
       <div
