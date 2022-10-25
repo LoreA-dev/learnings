@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+<body>
+    <div class="container" >
+        <h1>Simplet post form</h1>
+        <form>
+            <label class="result"></label>
+            <label >Number1</label>
+            <input id="num1" type="number" value="5"/>
+            <label  >Number2</label>
+            <input id="num2" type="number" value="8" />
+            <input type="submit" />
+
+        </form>
+    </div>
+    <script>
+        document.addEventListener("submit", sendData)
+        function sendData(element){
+            element.preventDefault();
+            const a= document.querySelector("#num1").value;
+            const b= document.querySelector("#num2").value;
+            
+            fetch("http://localhost:5000/add",{
+                method:"POST",
+                headers:{
+                    Accept: "application/json",
+                    "Content-Type":"application/json"
+                },
+                body: JSON.stringify({
+                    a:parseInt(a),
+                    b:parseInt(b)
+                })
+            })
+            .then(res => res.json())
+            .then(data =>{
+                const{
+                    result
+                } = data;
+                console.log(result, data)
+                document.querySelector(".result").innerHTML= `La suma es:  ${result}`;
+            })
+            .catch(err => console.log(err));
+        }
+    </script>
+</body>
+</html>
