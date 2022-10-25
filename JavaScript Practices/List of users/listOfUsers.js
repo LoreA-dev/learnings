@@ -26,3 +26,12 @@ function newData() {
     addUser.age +
     `</td></tbody>`;
 }
+
+
+ABC,[C,B,A]
+function getP(str){
+  var p= [b],
+  n= [c],
+  c=[c,b,a]
+}
+c=[]

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>COVID19 register form</h1>
+    <form action="" method="GET" name="formRegister" onsubmit="formValidation()">
+        <p>Name: <input type="text" id="name" /></p>
+        <p>User: <input type="text" id="user" /></p>
+        <p>Gender:
+            <input type="radio" name="genderRadios" value="female" />
+            <label for="female" >Female</label> 
+            <input type="radio" name="genderRadios" value="male" />
+            <label for="male">Male</label>
+        </p>
+        <p>Email: <input type="email" required/></p>
+        <p>Password: <input type="password" id="password" required/><i class="far fa-eye" onmouseover="seePassword()" onmouseout="hidePassword()"></i></p>
+        <p><input type="checkbox"/>I agree to the terms and conditions.</p>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="https://kit.fontawesome.com/646e009a51.js" crossorigin="anonymous"></script>
+    <script src="../vaccination/js/validation.js"></script>
+</body>
+</html>
